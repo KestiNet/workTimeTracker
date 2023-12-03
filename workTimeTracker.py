@@ -21,6 +21,8 @@ for weekday in weekdays:
 
 #TODO add a function to ask user what time they started working on Friday so that the go home time can be calculated
 
+friday = float(input(f"Enter starting time on friday: "))
+
 #calls for the function that converts the decimal time
 converter = convert_decimal_time(workTime)
 normalConvert = sum(converter)
