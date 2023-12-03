@@ -1,7 +1,7 @@
 #Converts decimal time to normal time
-def convert_decimal_time(decima_time):
+def convert_decimal_time(decimal_time):
     hours = int(convert_decimal_time)
-    minutes_decimal = (decima_time - hours) * 60
+    minutes_decimal = (decimal_time - hours) * 60
     minutes = round(minutes_decimal)
     return hours, minutes
 
@@ -13,7 +13,7 @@ weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday"]
 for weekday in weekdays:
     while True:
         try:
-            decimal_time_input = float(input(f"Enter hours worked on {weekday}:"))
+            decimal_time_input = float(input(f"Enter hours worked on {weekday}: "))
             break
         except ValueError:
             print("Invalid value, expecting a float")
@@ -32,3 +32,4 @@ work_days_total = sum(workTime)
 print(f"total hours worked: ", dict(zip(weekdays, workTime)))
 print(f"total hours worked: {work_days_total}")
 print(f"total normal hours worked: {normalConvert}")
+print(friday)
